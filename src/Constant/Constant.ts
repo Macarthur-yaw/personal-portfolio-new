@@ -21,14 +21,15 @@ type projects={
     title:string,
     description:string,
 tools:tools[],
-imgUrl:string
+imgUrl:string,
+link:string
 }
 
 export const Experience:Experience[]=[{
 id:1,
 dateRange:"November 2023-January 2024",
 title:"Frontend Engineer intern-Maltiti",
-description:"Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility",
+description:"Build and maintain components for the back office of Maltiti to handle the management of products",
 tools:[
     {
          tool1:"Javascript",
@@ -41,11 +42,12 @@ tools:[
     id:2,
     dateRange:"March 2024-Present",
     title:"Frontend Engineer-Ideation Axis ",
-    description:"Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility",
+    description:"Build and maintain critical components used to construct Ideation Axis frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility",
     tools:[
         {
             tool1:"Javascript",
-   tool2:"React"         
+   tool2:"React",
+   tool3:"Tailwind"         
         }
     ]
 
@@ -62,7 +64,8 @@ export const projects:projects[]=[{
     tool2:"Tailwind css"
     }
     ],
-    imgUrl:hubtelproject
+    imgUrl:hubtelproject,
+    link:"hubtel-clone.vercel.app"
 
 },{
     id:2,
@@ -76,7 +79,8 @@ export const projects:projects[]=[{
             ,tool4:"Node "
         }
     ],
-    imgUrl:hotelproject
+    imgUrl:taskproject,
+    link:"https://task-manager-app-omega.vercel.app/"
 },{
     id:3,
     title:"Hotel web application",
@@ -87,5 +91,6 @@ export const projects:projects[]=[{
             tool2:"Tailwind "
         }
     ],
-    imgUrl:taskproject
+    imgUrl:hotelproject,
+    link:"https://hotelwebapp.vercel.app/"
 }]

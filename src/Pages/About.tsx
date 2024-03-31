@@ -20,20 +20,8 @@ className="md:sticky
 top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:mx-12 md:px-12 lg:relative lg:mx-auto 
 text-gray-300
 "
->My primary focus at 
+>I specialize in crafting seamless digital experiences that prioritize user accessibility and engagement. Combining creativity with technical prowess, I excel in designing user interfaces that not only captivate visually but also perform optimally. Beyond my professional work, I enjoy sharing knowledge through online courses, particularly on javascript, empowering others to navigate the digital realm confidently. Outside of work, I indulge in various hobbies such as outdoor exploration, reading, spending time with loved ones, and gaming, always seeking new adventures to enrich my life.
 
- &nbsp;
-<span className="text-white">
-Ideation Axis
-</span>
-&nbsp;
-centers around creating seamless digital experiences that resonate with our users. I'm deeply passionate about crafting user interfaces that not only captivate visually but also prioritize accessibility, ensuring that everyone can engage with our products effortlessly.
-
-I thrive in the dynamic space where creativity and technical expertise intersect, striving to build software solutions that not only meet aesthetic standards but also excel in performance and functionality.
-
-Beyond my professional commitments, I've also embarked on a journey of knowledge-sharing, recently launching an online course that demystifies the complexities of [specific topic or technology]. It's immensely fulfilling to empower others with the skills and insights they need to navigate the digital landscape confidently.
-
-When I step away from my workstation, I immerse myself in a variety of hobbies and interests. Whether it's exploring the great outdoors, losing myself in the pages of a compelling book, cherishing moments with loved ones, or embarking on virtual quests in gaming worlds, I'm always seeking new experiences and adventures to enrich my life.
 
 </span>
 
