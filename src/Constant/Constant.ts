@@ -65,7 +65,7 @@ export const projects:projects[]=[{
     }
     ],
     imgUrl:hubtelproject,
-    link:"hubtel-clone.vercel.app"
+    link:"https://hubtel-clone.vercel.app/"
 
 },{
     id:2,
