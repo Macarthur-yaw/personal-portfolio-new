@@ -4,20 +4,16 @@ const Projects = () => {
     return ( 
 
 <>
-<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-    <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Projects
+<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen  px-6 py-5 backdrop-blur md:-mx-12 md:px-12  lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 ">
+         <h2 className="text-2xl uppercase tracking-widest font-serif text-center font-semibold text-slate-200 mb-4">
+       Projects
 </h2></div>
- <div className='mt-16' id='project'>
+ <div className='mt-2' id='project'>
           
           {
                 projects.map((content)=>(
                     <div key={content.id} className=" p-2 flex md:flex-row flex-col  mb-12 items-start gap-4" >
 
-    <img
-    loading='lazy'
-   width='200'
-   height='50'
-    src={content.imgUrl} alt='project description' className='rounded border-2  border-slate-200/10 '/>
 
     <div className="z-10 sm:col-span-6">
     <h3 className="font-medium leading-snug text-slate-200">
