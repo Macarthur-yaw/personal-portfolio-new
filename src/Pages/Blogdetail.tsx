@@ -28,7 +28,7 @@ export default function BlogDetails() {
       .catch((error) => console.log(error));
   }, [slug]);
 
-  if (!post) return <div className="text-red-400 p-4">Blog not found.</div>;
+  
 
   return (
     <div className="w-full min-h-screen bg-[#1c1917] text-slate-200">
@@ -42,8 +42,8 @@ export default function BlogDetails() {
         </button>
 
         {/* Header */}
-        <header className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">{post.title}</h1>
+      {post != null &&(  <header className="mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">{ post.title}</h1>
           <p className="text-sm text-slate-500">
             {new Date(post.datePublished).toLocaleDateString("en-US", {
               year: "numeric",
@@ -52,19 +52,20 @@ export default function BlogDetails() {
             })}
           </p>
           <hr className="border-slate-700 mt-4" />
-        </header>
+        </header>)
+}
 
-        {/* Blog Content */}
-        <article className="prose prose-invert max-w-none mt-8 space-y-6 text-[1rem] leading-relaxed">
+     
+       {post != null &&(   <article className="prose prose-invert max-w-none mt-8 space-y-6 text-[1rem] leading-relaxed">
           {post.content.map((block) =>
             block.children.map((child) => <p key={child._key}>{child.text}</p>)
           )}
-        </article>
+        </article>)}
 
         {/* Optional Footer */}
-        <footer className="mt-12 border-t border-slate-700 pt-6 text-sm text-slate-400">
-          <p>Thank you for reading! Share this post with your friends.</p>
-        </footer>
+        {/* <footer className="mt-12 border-t border-slate-700 pt-6 text-sm text-center text-slate-400">
+        &copy;  <p>MacArthur Kevin</p>
+        </footer> */}
       </div>
     </div>
   );
