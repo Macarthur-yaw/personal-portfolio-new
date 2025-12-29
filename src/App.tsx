@@ -1,15 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BlogDetails from "./Pages/Blogdetail";
-import Home from "./Pages/Home";
+import { Suspense, lazy } from "react";
+import LoadingBar from "./Components/LoadingBar";
 
+
+const BlogDetails = lazy(() => import("./Pages/Blogdetail"));
+const Home = lazy(() => import("./Pages/Home"));
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blogs/:slug" element={<BlogDetails />} />
-      </Routes>
+      <Suspense fallback={<LoadingBar />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blogs/:slug" element={<BlogDetails />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }
